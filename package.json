@@ -1,28 +1,28 @@
 {
-  "dependencies": {
-    "chalk": "^5.2.0",
-    "inquirer": "^8.2.4",
-    "mysql": "^2.18.1"
-  },
   "name": "employee-tracker",
-  "description": "Module 12 Homework Employee tracker",
   "version": "1.0.0",
+  "description": "# Unit 12 MySQL Homework: Employee Tracker",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \\\"Error: no test Specified\\\" && exit 1\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fominmike/employee-tracker.git"
   },
-  "keywords": [
-    "git"
-  ],
   "author": "Michael Fomin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fominmike/employee-tracker/issues"
   },
-  "homepage": "https://github.com/fominmike/employee-tracker#readme"
+  "homepage": "https://github.com/fominmike/employee-tracker#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "console.table": "^0.10.0",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "multiselect-prompt": "^0.3.2",
+    "mysql": "^2.18.1"
+  }
 }

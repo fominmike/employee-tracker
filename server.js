@@ -4,22 +4,19 @@ const inquirer = require("inquirer");
 const figlet = require("figlet");
 
 const connection = mysql.createConnection({
-    host: "localhost",
-  
-    
+    host: '127.0.0.1',
     port: 3306,
-  
     user: "root",
-  
-    password: "password",
+    password: "",
     database: "employeeDB",
     multipleStatements: true,
   });
 
-  connection.connect((err) => {
-    if (err) throw err;
+//   connection.connect((err) => {
+//     if (err) throw err;
   
     console.table(chalk.yellow("\n WELCOME TO EMPLOYEE TRACKER \n"));
+    
   
     console.table(
       chalk.yellow.bold(
@@ -36,8 +33,7 @@ const connection = mysql.createConnection({
       )
     );
 
-    badCompany();
-  });
+;
   
   const askNewEmployee = [
     "What is the first name?",
